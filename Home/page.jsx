@@ -1,31 +1,25 @@
 import React from 'react';
 import Card from '../Components/Cards';
+import data from '../data.json';
 
-// Header
+// Header Component
 // Body Components: Card
-// Footer
+// Footer Component
 
 function App() {
   return (
-    // body
-    <div className="flex gap-[10px] flex-wrap">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <>
+      <div className=" flex gap-[10px] flex-wrap justify-center">
+        {data.map((data, index) => (
+          <Card
+            key={index}
+            cloth={data.name}
+            offer={data.offer}
+            image={data.image}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 
