@@ -1,9 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-// Header
-// Body
-// Footer
 
 function Card() {
   return (
@@ -23,29 +18,4 @@ function Card() {
   );
 }
 
-function App() {
-  return (
-    // body
-    <div className="flex gap-[10px] flex-wrap">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
-  );
-}
-
-const root = ReactDOM.createRoot(document.querySelector('#root'));
-root.render(<App />);
+export default Card;
